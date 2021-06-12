@@ -1,15 +1,34 @@
 <html>
+    <head>
+        <style>
+            #roundcorner{
+                border-radius:50%;
+            }
+
+            html, body {
+            width: 100%;
+            height: auto;
+            }
+            
+            #full_coverage {
+            width: 100%;
+            height: auto;
+            }
+        </style>
+
     <body>     
         
-    <div>
-        <div><a href="index.html"><img src="assests/images/logo.png" alt="logo" width="150" height="100"></a>
+    <div class="full_coverage">
+        <header>
+        <div><a href="index.html"><img src="assests/images/logo.png" alt="logo" width="60" height="60" id="roundcorner"></a>
             <a href="login.html" target="_blank"> Login </a>
+        </header>
         </div>
 
         <!--Content Div-->
         <div>
             <a href="detail.html"> <img
-                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"> </a>
+                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" width="500" height="500"> </a>
 
             
             <h2>  Radisson Blue Hotel </h2>
@@ -28,14 +47,16 @@
         </div>
 
         <div>
+            <footer>
             <a href="contact.html"> Contact Us </a> <br>
             <a href="https://www.facebook.com" target="_blank"> <img src="assests/images/facebook.png" height="20"
-                    width="22"> </a>
+                    width="22" id="roundcorner"> </a>
             <a href="https://www.instagram.com" target="_blank"> <img src="assests/images/instagram.png" height="20"
-                    width="22"> </a>
+                    width="22" id="roundcorner"> </a>
             <a href="https://twitter.com" target="_blank"> <img src="assests/images/twitter.png" height="20"
-                    width="22"></a> <br>
+                    width="22" id="roundcorner"></a> <br>
             &copy; 2020 ROOM SEARCH PVT.LTD
+        </footer>
         </div>
 </div>
         
