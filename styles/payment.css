@@ -1,0 +1,55 @@
+#roundcorner{
+    border-radius:50%;
+    width:60px;
+    height:60px;
+}
+.social_img{
+    width:22px;
+    height:20px;
+}
+
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    background-color: #e0e0e0;
+    }
+    
+.city{
+    width:250px;
+    height:200px;
+}
+.city_img{
+ margin:2%;
+ background-color:rgb(132,136,139);
+ width:40%;
+}
+
+header,footer {
+    background-color:rosybrown
+    }
+
+.city_img{
+        margin-top:2%;
+        margin-bottom:2%;
+        background-color:rgb(132,136,139);
+        margin-left:25%;
+        margin-right:25%;
+        width:50%;
+       }
+
+.city{
+    width:500;
+    height:500;
+}
+
+.detail{
+    margin:2%;
+}
+
+.hotel-detail{
+    border:1px solid black;
+    border-radius: 5px;
+    padding:1% 2%;
+}

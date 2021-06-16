@@ -1,0 +1,35 @@
+#roundcorner{
+    border-radius:50%;
+    width:60px;
+    height:60px;
+}
+.social_img{
+    width:22px;
+    height:20px;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    background-color: #e0e0e0;
+    }
+    
+
+header,footer {
+    background-color:rosybrown
+    }
+
+#image{
+        margin: 2% 4% 0% 4%;
+        width:500px;
+        height:500px;
+    }
+
+#form{
+    margin: 0% 4% 1% 4%;
+}
+
+#hotel_image{
+    margin:1% 4% 2% 4%;
+}

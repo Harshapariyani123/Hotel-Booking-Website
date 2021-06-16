@@ -1,34 +1,22 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <style>
-            #roundcorner{
-                border-radius:50%;
-            }
-
-            html, body {
-            width: 100%;
-            height: auto;
-            }
-            
-            #full_coverage {
-            width: 100%;
-            height: auto;
-            }
-        </style>
-
+        <title>payment</title>
+        <link rel="stylesheet" href="styles/payment.css">
     <body>     
         
-    <div class="full_coverage">
+    <div>
         <header>
-        <div><a href="index.html"><img src="assests/images/logo.png" alt="logo" width="60" height="60" id="roundcorner"></a>
+        <div><a href="index.html"><img src="assests/images/logo.png" alt="logo" id="roundcorner"></a>
             <a href="login.html" target="_blank"> Login </a>
-        </header>
+        
         </div>
+        </header>
 
         <!--Content Div-->
-        <div>
-            <a href="detail.html"> <img
-                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" width="500" height="500"> </a>
+        <div class="city_img">
+            <a href="detail.html"> <img class="city"
+                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"> </a>
 
             
             <h2>  Radisson Blue Hotel </h2>
@@ -36,28 +24,30 @@
             <p> National Highway 8, New Delhi 110017 India </p>
         </div>
 
-        <div>
+        <div class="detail">
             <b> Name:</b> John Doe
             <p> <b> Number of Adults:</b> 2 </p>
             <p> <b> Check in Date:</b> 06.06.2020 </p>
             <p> <b> Check out Date:</b> 08.06.2020 </p>
-            <p> <b> Tariff Breakdown:</b> Rs 1000 x 2 Adults x 5 Nights </p>
-            <p> <b> Total Amount:</b> Rs 10000 </p> 
-            <a href="payment.html"> Pay Now </a>
         </div>
 
-        <div>
-            <footer>
-            <a href="contact.html"> Contact Us </a> <br>
-            <a href="https://www.facebook.com" target="_blank"> <img src="assests/images/facebook.png" height="20"
-                    width="22" id="roundcorner"> </a>
-            <a href="https://www.instagram.com" target="_blank"> <img src="assests/images/instagram.png" height="20"
-                    width="22" id="roundcorner"> </a>
-            <a href="https://twitter.com" target="_blank"> <img src="assests/images/twitter.png" height="20"
-                    width="22" id="roundcorner"></a> <br>
-            &copy; 2020 ROOM SEARCH PVT.LTD
-        </footer>
+        <div class="detail" class="hotel-detail">
+            <p> <b> Tariff Breakdown:</b> Rs 1000 x 2 Adults x 5 Nights </p>
+            <p> <b> Total Amount:</b> Rs 10000 </p> 
         </div>
+
+        <div><a href="payment.html"> Pay Now </a></div>
+
+        <footer>
+        <div> 
+            <a href="contact.html"> Contact Us </a> <br>
+            <a href="https://www.facebook.com" target="_blank"> <img class="social_img" src="assests/images/facebook.png"> </a>
+            <a href="https://www.instagram.com" target="_blank"> <img class="social_img" src="assests/images/instagram.png"> </a>
+            <a href="https://twitter.com" target="_blank"> <img class="social_img" src="assests/images/twitter.png"></a> <br>
+            &copy; 2020 ROOM SEARCH PVT.LTD
+        
+        </div>
+        </footer>
 </div>
         
     </body>
