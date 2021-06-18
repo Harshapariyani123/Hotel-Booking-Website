@@ -1,21 +1,3 @@
-#roundcorner{
-    border-radius:50%;
-    width:60px;
-    height:60px;
-}
-.social_img{
-    width:22px;
-    height:20px;
-}
-
-
-body {
-    width: 100%;
-    height: auto;
-    margin: 0px;
-    background-color: #e0e0e0;
-    }
-    
 .city{
     width:250px;
     height:200px;
@@ -26,6 +8,17 @@ body {
  width:40%;
 }
 
-header,footer {
-    background-color:rosybrown
-    }
+
+span{
+        margin-left:40%;
+}    
+
+.view{
+    padding:12px;
+}
+
+.flex{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
