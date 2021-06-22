@@ -1,12 +1,9 @@
 .city{
     width:250px;
     height:200px;
+    float:left;
 }
-.city_img{
- margin:2%;
- background-color:rgb(132,136,139);
- width:40%;
-}
+
 .city_img{
         margin-top:2%;
         margin-bottom:2%;
@@ -14,19 +11,42 @@
         margin-left:25%;
         margin-right:25%;
         width:50%;
+        height:300%;
+       
        }
-
-.city{
-    width:500;
-    height:500;
-}
 
 .detail{
     margin:2%;
 }
 
-#hotel-detail{
+
+.flex-payment{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:unwrap;
+    justify-content:space-evenly;
+    background-color:rosybrown;
     border:1px solid black;
     border-radius: 5px;
-    padding:1% 2%;
+    margin-left:5%;
+    margin-right:5%;
 }
+
+.pay{
+    display:flex;
+    align-items:center;
+    text-align:center
+}
+
+
+.padding{
+    margin-left:40%;
+}
+
+ .flex1{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+

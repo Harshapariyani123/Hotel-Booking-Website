@@ -1,50 +1,89 @@
 <!DOCTYPE html>
-<html>
-    
+<html id="font-normal">
+
 <head>
     <title>detail</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="styles/detail.css" rel="stylesheet">
-    <link href="styles/common.css" rel="stylesheet">   
+    <link href="styles/common.css" rel="stylesheet">
 </head>
 
 <body>
-    
-    <div class="cointainer">
-            <header>
-                <a href="index.html"><img id="roundcorner" src="assests/images/logo.png" alt="logo" ></a>
-                <a href="login.html" target="_blank" class="login"> Login </a>
-            </header>
+
+    <div class="cointainer" id="content">
+        <header>
+            <a href="index.html"><img id="roundcorner" src="assests/images/logo.png" alt="logo"></a>
+            <a href="login.html" target="_blank" class="login"> Login </a>
+        </header>
 
         <!--Content Div-->
-        <div >
-            <a href="detail.html"> <img id="image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"> </a>
 
-            <form name="detail" action="payment.html" id="form">
+        <div  class="flex-form" id="hotel_image">
 
-                <label for="adults">Adults:</label>
-                <input type="number" name="adults" id ="adults" min="1" value="1" required>
-                <br>
-                <label for="name">Name:</label>
-                <input type="text" name="name" id ="name" autocomplete="off" required >
-                <br>
-                <label for="fromdate">From Date:</label>
-                <input type="date" name="fromdate" id ="fromdate" required>
-                <br>
-                <label for="todate">To Date:</label>
-                <input type="date" name="todate" id ="todate" required>
-                <br>
-                <label for="total">Total:</label>
-                <input type="text" name="total" id ="total" disabled="">
-                <br>
-                <button type="Book Now">Book Now</button>   
-            </form>
+            <div class="image">
+                <a href="detail.html"> <img id="_image"
+                        src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"> </a>
+            </div>
 
-            <div id="hotel_image">
+            <div class="border"></div>
+            <div style="margin-top:15px">
+                <form name="detail" action="payment.html">
+
+                    <div class="forms">
+                        <label for="adults" class="text">Adults:</label>
+                        <div class="input">
+                            <input type="number" name="adults" id="adults" min="1" value="1" required
+                                style="width:250%">
+                        </div>
+                    </div>
+
+                    <div class="forms">
+                        <label for="name" class="text">Name:</label>
+                        <div class="input">
+                            <input type="text" name="name" id="name" autocomplete="off" required style="width:250%">
+                        </div>
+                    </div>
+
+                    <div class="forms">
+                        <label for="fromdate" class="text">From Date:</label>
+                        <div class="input">
+                            <input type="date" name="fromdate" id="fromdate" required style="width:250%">
+                        </div>
+                    </div>
+
+                    <div class="forms">
+                        <label for="todate" class="text">To Date:</label>
+                        <div class="input">
+                            <input type="date" name="todate" id="todate" required style="width:250%">
+                        </div>
+                    </div>
+
+                    <div class="forms">
+                        <label for="total" class="text">Total:</label>
+                        <div class="input">
+                            <input type="text" name="total" id="total" disabled="" style="width:250%">
+                        </div>
+                    </div>
+
+                    <div style="float:right">
+                        <button type="Book Now">Book Now</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+
+        <div id="hotel_image">
             <h2> Radisson Blue Hotel </h2>
-            <p> Rating </p>
+            <p> <b>
+                    <h5 id="font-cursive">RATING</h5>
+                </b> </p>
             <p> 5 Star </p>
-            <p> AMENITIES</p>
+            <p> <b>
+                    <h5 id="font-cursive">AMENITIES</h5>
+                </b></p>
             <ul>
                 <li> Room service </li>
                 <li> Restaurant </li>
@@ -53,30 +92,36 @@
                 <li> pool </li>
             </ul>
 
-            <p> <b> <h5> DESCRIPTION</h5> </b> </p>
+            <p>
+            <h5 id="font-cursive"><b>DESCRIPTION</b></h5>
+            </p>
             <p>A. MakeMyTrip, being the best hotel-booking site in the country, offers several discounts on budget
                 hotels as well. </p>
-            </div>
         </div>
-
-        <!--Footer Div-->
-        <footer>
-            <div class="contact">
-                <a href="contact.html"> Contact Us </a>
-           </div>
-
-           <div class="social-icon">
-               <a href="https://www.facebook.com" target="_blank"> <img class="social_img" src="assests/images/facebook.png"> </a>
-               <a href="https://www.instagram.com" target="_blank"> <img class="social_img" src="assests/images/instagram.png" > </a>
-               <a href="https://twitter.com" target="_blank"> <img class="social_img" src="assests/images/twitter.png">
-                   </a>
-           </div>
-                   
-               <div class="copyright">&copy; 2020 ROOM SEARCH PVT.LTD</div>
-       </footer>
 
     </div>
 
+    <!--Footer Div-->
+    <footer class="flex">
+        <div class="contact">
+            <a href="contact.html"> Contact Us </a>
+        </div>
+
+        <div class="copyright">&copy; 2020 ROOM SEARCH PVT.LTD</div>
+
+        <div class="social-icon">
+            <a href="https://www.facebook.com" target="_blank"> <img class="social_img"
+                    src="assests/images/facebook.png"> </a>
+            <a href="https://www.instagram.com" target="_blank"> <img class="social_img"
+                    src="assests/images/instagram.png"> </a>
+            <a href="https://twitter.com" target="_blank"> <img class="social_img" src="assests/images/twitter.png"></a>
+        </div>
+
+
+    </footer>
+
+    </div>
+    <br><br><br><br>
 </body>
 
 </html>

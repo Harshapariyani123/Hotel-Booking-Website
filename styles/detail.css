@@ -5,22 +5,64 @@
 }
 
 
-#image{
-        margin: 2% 4% 0% 4%;
-        width:500px;
-        height:500px;
-    }
-
-#form{
-    margin: 0% 4% 1% 4%;
-    
+.image{
+        margin-right: 5px;
+        
+        margin-top:10px;
+        margin-bottom:10px;
 }
+
+#_image{
+    height:350px;
+    width:500px;
+    margin-top:3%;
+    margin-left: 5px;
+}
+
+
 
 #hotel_image{
     margin:1% 4% 2% 4%;
+ 
 }
 
 #searchbar{
     
   justify-content: center;
 }
+
+.forms{
+    display:flex;
+    margin-bottom:40px;
+    margin-top:20px;
+}
+
+.input{
+    width:40%;
+}
+
+
+.flex-form{
+    display:flex;
+    justify-content:space-evenly;
+    border: 1px solid black;
+}
+
+
+.text-font{
+    font-family: 'Satisfy', cursive;
+}
+
+.border{
+    border-left:1px solid black;
+    height:62%;
+    position:absolute;
+    left:60%;
+    top:19.5%;
+}
+
+.text{
+    width:60%;
+}
+
+

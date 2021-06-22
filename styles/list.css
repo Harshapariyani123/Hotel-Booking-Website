@@ -1,24 +1,28 @@
 .city{
     width:250px;
     height:200px;
+    float:left;
+    
 }
 .city_img{
  margin:2%;
- background-color:rgb(132,136,139);
+ background-color:lightgrey;
  width:40%;
 }
 
 
 span{
-        margin-left:40%;
+        margin-left:37%;
 }    
 
 .view{
-    padding:12px;
+    padding:40px;
+   align-items:center;
 }
 
-.flex{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
+
+
+.padding{
+    margin-left:50%;
 }
+
