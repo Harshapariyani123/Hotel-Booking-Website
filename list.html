@@ -1,79 +1,58 @@
 <!DOCTYPE html>
-<html class="font-normal">
+<html>
 
 <head>
-    <title>list</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+
+
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link href="styles/list.css" rel="stylesheet">
-    <link href="styles/common.css" rel="stylesheet">   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/loader.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/list.css">
 </head>
 
 <body>
+    <div id="loader"></div>
+    <div class="main-container">
+        <!-- Header -->
+        <header class="header-footer" id="header"></header>
 
-    <div id="cointainer">
-        <header>
-            <a href="index.html"><img id="roundcorner" src="assests/images/logo.png" alt="logo" ></a>
-            <a href="login.html" target="_blank" class="login"> Login </a>
-        </header>
+        <!-- Content -->
 
-       
-       
-        <div id="content">
-            <span >
-                <a href="#list_view" class="view"> <b>List View</b> </a>
-                <a href="#map_view" class="view"><b>Map View</b>  </a>
-            </span>   
-        
-            <div class="flex">
-                
-                <div id="list_view" class="city_img">
-                    <a href="detail.html"> <img class="city"
-                        src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" > </a>
-                    <h3 class="padding"> <a href="detail.html"> Radisson Blue Hotel </a> </h3>
-                    <p class="padding"> <a href="detail.html"> 5 Star </a> </p>
-                    <p class="padding"> <a href="detail.html"> New Delhi </a> </p>
+        <div id="list-container">
+
+            <ul class="nav nav-pills" id="pills-tab">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="pill" href="#list-view">List View</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#map-view">Map View</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tab-content">
+                <div id="list-view" class="tab-pane fade show active">
+                    <div id="hotel-list"></div>
                 </div>
-
-                <div class="city_img" >
-                    <a href="detail.html"> <img class="city"
-                        src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"> </a>
-                    <h3 class="padding">  The Lalit New Delhi  </h3>
-                    <p class="padding"> 4.5 Star  </p>
-                    <p class="padding"> New Delhi  </p>
-                </div>
-
-                <div class="city_img">
-                    <a href="detail.html"> <img class="city"
-                            src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"> </a>
-                    <h3 class="padding">  Taj Palace  </h3>
-                    <p class="padding">  4.05 Star  </p>
-                    <p class="padding">  New Delhi  </p>
+                <div id="map-view" class="tab-pane fade">
+                    <div id="map"></div>
                 </div>
             </div>
-
         </div>
 
-        <!--Footer Div-->
-        
-        <footer class="flex">
-            <div class="contact">
-                <a href="contact.html"> Contact Us </a>
-           </div>
-
-           <div class="copyright">&copy; 2020 ROOM SEARCH PVT.LTD</div>
-
-           <div class="social-icon">
-               <a href="https://www.facebook.com" target="_blank"> <img class="social_img" src="assests/images/facebook.png"> </a>
-               <a href="https://www.instagram.com" target="_blank"> <img class="social_img" src="assests/images/instagram.png" > </a>
-               <a href="https://twitter.com" target="_blank"> <img class="social_img" src="assests/images/twitter.png">
-                   </a>
-           </div>
-                   
-             
-       </footer>
-
+        <!-- Footer -->
+        <footer class="header-footer" id="footer"></footer>
     </div>
-   
+
+    <script src="scripts/common.js"></script>
+    <script src="scripts/list.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8FJi2uxHMe_w9gL3wFlhfABQZ1dLhdk4"></script>
 </body>
 
 </html>

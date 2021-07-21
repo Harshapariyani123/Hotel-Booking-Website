@@ -1,96 +1,78 @@
-#roundcorner{
-    border-radius:50%;
-    width:60px;
-    height:60px;
-    margin-left:1%;
-}
-
-.container{
-    width:100%;
-    height:100%;
-    margin: auto;
-}
-
-#content{
-    padding-top:8%;
-    padding-bottom:6%;
-}
-
-
-body {
-    width: 100%;
-    height: auto;
-    margin: 0px;
-    background-color: #e0e0e0;
-}
-    
-header{
-    background-color:rosybrown;
-    position: fixed;
-    top: 0px;
-    width:100%;
-}
-
-footer {
-        background-color:rosybrown;
-        position: fixed;
-        bottom: 0px;
-        width:100%;
-}
-
-.login{
-    float:right;
-    padding:1em;
-    margin-left:1%;
-}
-
-#font-normal{
+* {
     font-family: 'Ubuntu', sans-serif;
 }
-
-#font-cursive{
-    font-family: 'Satisfy', cursive;
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #e0e0e0;  
 }
-
-
-.social-icon{
-    padding:1em;
-    margin-right:2%;
-}
-
-.social_img{
-    width:22px;
-    height:20px;
-}
-
 a {
-    text-decoration:none;
-    color:black;
+    color: black !important;
 }
-
-.contact{
-   padding:1em;
-   margin-left:2%;
+.main-container {
+    width: 100%;
+    height: 100%;
 }
-
-.copyright{
-    font-size:10px;
-    text-align:center;
-    padding:20px;
-  }
-
-  #content{
-      width:100%;
-      height:100%;
-      margin:auto;
-  }
-
-  
-
-  .flex{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:space-between;
+#logo-image {
+    height: 100%;
+    width: 60px;
 }
- 
+.logo {
+    margin-left: 1%;
+}
+.social-media-image {
+    height: 20px;
+    width: 22px;
+}
+.header-footer {
+    background-color:rosybrown;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header {
+    top: 0;  
+}
+footer {
+    padding:0.7%;
+    bottom: 0;
+}
+#login {
+    margin-right: 2%;
+}
+#contact {
+    margin-left: 2%;
+}
+#social-media-images {
+    margin-right: 2%;
+}
+#copyright-text {
+    font-size: 10px;
+}
+.hotel-name-rating {
+    padding: 3% 3% !important;
+}
+.heading {
+    font-family: cursive !important;
+    margin-top: 1%;
+}
+#login-form {
+    display: flex;
+    flex-direction: column;
+}
+.login-field {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2%;
+}
+#login-button {
+    margin: auto;
+}
+.checked {
+    color: orange;
+}
